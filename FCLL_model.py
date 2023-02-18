@@ -81,7 +81,7 @@ class FCLL(nn.Module):
         self.text_proj = nn.Linear(self.width, self.embed_dim)
 
         # sense encoder
-        self.sense_encoder = copy.deepcopy(self.text_encoder).type(torch.float32)
+        self.sense_encoder = text_encoder_withparas(clip_model)
 
         # create momentum encoders
         self.visual_encoder_m = visual_encoder_withparas(clip_model)
