@@ -15,7 +15,8 @@ from train import train_fn
 from evaluation import evaluation_fn
 
 def set_config():
-    parser = argparse.ArgumentParser(description="Finetune on V-WSD")
+    parser = argparse.ArgumentParser(description="FCLL for Visual WSD")
+    parser.add_argument('--run_name', type=str, required=False, default="FCLLv1")
     parser.add_argument('--data_dir', type=str, required=False, default=r"D:\工作\Datasets\V-WSD\vwsd")
     parser.add_argument('--device', type=int, required=False, default=0)
     parser.add_argument('--train_batch_size', type=int, required=False, default=2)
@@ -26,6 +27,7 @@ def set_config():
 
     parser.add_argument('--save_dir', type=str, required=False, default="./save_model",help="path to save weights")
     parser.add_argument('--log_dir', type=str, required=False, default="./log",help="path to save log")
+    parser.add_argument('--result_dir', type=str, required=False, default="./result", help="path to save results")
 
     parser.add_argument('--mixed_precision', action='store_true', default=True, help="use mixed precision or not")
     parser.add_argument('--grad_clip', action='store_true', default=True, help="clip the gradients or not")
@@ -89,7 +91,6 @@ if __name__ == '__main__':
         output_prediction(epoch, en_status, en_best_imgs, en_SORT10, language='en')
         output_prediction(epoch, fa_status, fa_best_imgs, fa_SORT10, language='fa')
         output_prediction(epoch, it_status, it_best_imgs, it_SORT10, language='it')
-        break
 
         # update logger
         update_logger(log_path,epoch,train_status,eval_status,[en_status,fa_status,it_status],total_acc,total_mrr)

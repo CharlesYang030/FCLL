@@ -30,6 +30,10 @@ def seed_everything(seed):
     torch.backends.cudnn.benchmark = True
 
 def init_logger(args):
+    dirs = [args.log_dir,args.save_dir,args.result_dir]
+    for dir in dirs:
+        if not os.path.exists(dir):
+            os.mkdir(dir)
     log_path = os.path.join(args.log_dir,str(datetime.now())[:-7].replace(' ', '_').replace(':', '.') + f'{args.run_name}_log.txt')
     logger = open(log_path, 'w',encoding='utf-8')
     logger.write(str(args) + '\n\n')
