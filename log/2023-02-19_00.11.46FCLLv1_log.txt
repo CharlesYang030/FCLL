@@ -1,2 +1,0 @@
-Namespace(alpha=0.4, data_dir='D:\\工作\\Datasets\\V-WSD\\vwsd', device=0, epochs=10, eval_batch_size=16, evaluate=False, grad_clip=True, log_dir='./log', lr=0.0001, min_lr=0.0, mixed_precision=True, num_workers=4, patience=3, result_dir='./result', run_name='FCLLv1', save_dir='./save_model', seed=42, train_batch_size=2, use_checkpoint=False, weight_decay=0.05)
-
