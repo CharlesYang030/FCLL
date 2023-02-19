@@ -1,7 +1,7 @@
 ## FCLL: A Fine-grained Contrastive Language-Image Learning Model for Cross-language Visual Word Sense Disambiguation
 FCLL is a reliable, verifiable and extensible model that has a powerful synthesis of reasoning from text to image and from image to text on fine-grained image-text knowledge. The results on the benchmark datasets of SemEval-2023 Task 1 show that FCLL performs well in the three tracks of English, Farsi and Italian, with an average hit rate at 1 of 72.56% and an average mean reciprocal rank of 82.22%, ranking first in the overall evaluation.
 
-### Announcement: Visual Word Sense Disambiguation (Visual WSD) is proposed by [SemEval-2023 Task 1](https://raganato.github.io/vwsd/) for the first time. Thanks to Raganato *et al.* for leading us to recognize this multimodal-multilingual field.
+#### Announcement: Visual Word Sense Disambiguation (Visual WSD) is proposed by [SemEval-2023 Task 1](https://raganato.github.io/vwsd/) for the first time. Thanks to Raganato *et al.* for leading us to recognize this multimodal-multilingual field.
 
 ---
 
@@ -51,7 +51,7 @@ python main.py --train_batch_size 2 --num_workers 4
 ```
 In training, the checkpoint of the best model will be saved into `./save_model`, the log of the training process will be saved into `./log`, and the outputs of each epoch will be saved into `./result`.
 
-#### 4.To evaluate, please run:
+#### 4.To evaluate using the best checkpoint, please run:
 ```.
 python main.py --eval_batch_size 16 --use_checkpoint --evaluate 
 ```
