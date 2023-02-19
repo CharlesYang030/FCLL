@@ -51,11 +51,11 @@ python main.py --train_batch_size 2 --num_workers 4
 ```
 In training, the checkpoint of the best model will be saved into `./save_model`, the log of the training process will be saved into `./log`, and the outputs of each epoch will be saved into `./result`.
 
-#### 4.To evaluating, please run:
+#### 4.To evaluate, please run:
 ```.
 python main.py --eval_batch_size 16 --use_checkpoint --evaluate 
 ```
 ---
 
 ### Acknowledgement
-FCLL is inspired by CLIP and MoCo, simultaneously relies on resources from BLIP, BabelNet. The original authors and their open-sourcing is appreciated.
+FCLL is inspired by [CLIP](https://github.com/openai/CLIP) and [MoCo](https://github.com/facebookresearch/moco), simultaneously relies on resources from [BLIP](https://github.com/salesforce/BLIP) and [BabelNet](https://babelnet.org/). The original authors and their open-sourcing are appreciated.
