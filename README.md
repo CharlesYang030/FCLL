@@ -10,7 +10,7 @@ Our code has been implemented on Pytorch 1.8.1. To reproduce our experiments, pl
 
 ### Usage
 #### 1.Download the datasets: 
-Please click on the following links to download our V-WSD KB and the official training/test set.
+Please click on the following links to download our V-WSD KB and the official training/test set, and then create a new `. /data` folder in the project directory.
 
 Dataset | Num. atw | Language of atw | Num. phrase | Language of phrase | Num. image | Correspondence | Size | Link
 --- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---:
@@ -20,6 +20,7 @@ Official test set | 968 | EN, FA, IT | 968 | EN, FA, IT | 8100 | 1-1-1 | 10.4GB 
 
 #### 2.Translate the non-English texts:
 In the official test set, Non-English ambiguous target words and phrases should be translated into English text, stored in `fa_translation.txt` and `it_translation.txt` separately, as the following format:
+
 ```
 (an instance in Farsi)
 برنج‎	brass	فلز برنج	brass
@@ -27,7 +28,7 @@ In the official test set, Non-English ambiguous target words and phrases should 
 gomma	eraser	gomma per smacchiare	eraser for stain removal
 ```
 
-Note that after downloading, please create a new `. /data` folder in the project directory and place the above three files as follows:<br>
+Note that after downloading and translating, please place the above files as follows:<br>
 ```.
 (the folder tree)
 |—— FCLL
