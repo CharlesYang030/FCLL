@@ -8,9 +8,12 @@ Our code has been implemented on Pytorch 1.8.1. To reproduce our experiments, pl
 
 ### Usage
 #### 1.Download the datasets: 
-please click on the following links to download our V-WSD KB and the official training/test set.
+Please click on the following links to download our V-WSD KB and the official training/test set.
+
 Dataset | Num. atw | Language of atw | Num. phrase | Language of phrase | Num. image | Correspondence | Link
 --- | :---: | :---: | :---: | :---: | :---: | :---: | :---:
 V-WSD KB | 12956 | EN, FA, IT | 20904 | EN | 97267 | 1-n-n | [Download]()
 Official training set | 12869 | EN | 12869 | EN | 12999 | 1-1-1 | [Download]()
 Official test set | 968 | EN, FA, IT | 968 | EN, FA, IT | 8100 | 1-1-1 | [Download]()
+
+After downloading, please create a new ". /data" folder in the project directory and place the above three files as follows:
