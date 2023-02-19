@@ -53,7 +53,7 @@ if __name__ == '__main__':
     # 2. set the model
     model = FCLL(args,kb_metadata)
     if args.use_checkpoint:
-        model.load_state_dict(torch.load(os.path.join(args.save_dir,'checkpoint2.pt')))
+        model.load_state_dict(torch.load(os.path.join(args.save_dir,'checkpoint.pt')))
         print('>>>>>>Using the model checkpoint :\n')
     model.to(args.device)
     optimizer = AdamW(model.parameters(), lr=args.lr, weight_decay=args.weight_decay)
