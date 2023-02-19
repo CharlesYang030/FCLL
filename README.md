@@ -4,7 +4,7 @@
 ### Environment
 Our code has been implemented on Pytorch 1.8.1. To reproduce our experiments, please run: <pre/>pip install -r requirements.txt</pre> 
 ### Usage
-1.Download the dataset: \n
+#### 1.Download the dataset: \n
 Please click on the following links to download our V-WSD KB and the official training/test set.
 Dataset | Num. image | Correspondence | Link
 --- | :---: | :---: | :---:
