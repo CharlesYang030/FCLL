@@ -3,6 +3,8 @@
 
 ### Announcement: Visual Word Sense Disambiguation (Visual WSD) is proposed by [SemEval-2023](https://semeval.github.io/SemEval2023/tasks) Task 1 for the first time. Thanks to Raganato *et al.* for leading us to recognize this multimodal-multilingual field.
 
+---
+
 ### Environment
 Our code has been implemented on Pytorch 1.8.1. To reproduce our experiments, please run: <pre/>pip install -r requirements.txt</pre> 
 
@@ -17,3 +19,13 @@ Official training set | 12869 | EN | 12869 | EN | 12999 | 1-1-1 | [Download]()
 Official test set | 968 | EN, FA, IT | 968 | EN, FA, IT | 8100 | 1-1-1 | [Download]()
 
 After downloading, please create a new ". /data" folder in the project directory and place the above three files as follows:
+``` .
+(the folder tree)
+|—— FCLL
+|    |—— $\color{#FF0000}{data}$
+|         |—— kb.data
+|         |—— official.traindata
+|         |—— official.testdata
+|    |—— CLIP
+|    |—— ...
+```
