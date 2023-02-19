@@ -15,7 +15,7 @@ Please click on the following links to download our V-WSD KB and the official tr
 Dataset | Num. atw | Language of atw | Num. phrase | Language of phrase | Num. image | Correspondence | Size | Link
 --- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---:
 V-WSD KB | 12956 | EN, FA, IT | 20904 | EN | 97267 | 1-n-n | 114GB | [Download]()
-Official training set | 12869 | EN | 12869 | EN | 12999 | 1-1-1 | 16.8GB | [Download]()
+Official training set | 12869 | EN | 12869 | EN | 12999 | 1-1-1 | 16.8GB | [Download](https://1drv.ms/u/s!AgvzREJAm7GyhEH4UfA4QFhhCM7E)
 Official test set | 968 | EN, FA, IT | 968 | EN, FA, IT | 8100 | 1-1-1 | 10.4GB | [Download](https://1drv.ms/u/s!AgvzREJAm7GyhEBWWGyB5DkfT-fS)
 
 #### 2.Translate the non-English texts:
@@ -44,3 +44,18 @@ Note that after downloading and translating, please place the above files as fol
 |    |—— CLIP
 |    |—— ...
 ```
+
+#### 3.To train from the scratch, please run:
+```.
+python main.py --train_batch_size 2 --num_workers 4
+```
+In training, the checkpoint of the best model will be saved into `./save_model`, the log of the training process will be saved into `./log`, and the outputs of each epoch will be saved into `./result`.
+
+#### 4.To evaluating, please run:
+```.
+python main.py --eval_batch_size 16 --use_checkpoint --evaluate 
+```
+---
+
+### Acknowledgement
+FCLL is inspired by CLIP and MoCo, simultaneously relies on resources from BLIP, BabelNet. The original authors and their open-sourcing is appreciated.
