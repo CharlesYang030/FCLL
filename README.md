@@ -2,7 +2,7 @@
 FCLL is a reliable, verifiable and extensible model that has a powerful synthesis of reasoning from text to image and from image to text on fine-grained image-text knowledge. The results on the benchmark datasets of SemEval-2023 Task 1 show that FCLL performs well in the three tracks of English, Farsi and Italian, with an average hit rate at 1 of 72.56% and an average mean reciprocal rank of 82.22%, ranking first in the overall evaluation.
 
 #### Approach:
-![image](https://1drv.ms/u/s!AgvzREJAm7GyhELwEYyx6LSkqWEw)
+![image](./FCLL.png)
 #### 
 #### V-WSD KB:
 ![image](./V-WSDKB.png)
