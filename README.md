@@ -2,9 +2,11 @@
 FCLL is a reliable, verifiable and extensible model that has a powerful synthesis of reasoning from text to image and from image to text on fine-grained image-text knowledge. The results on the benchmark datasets of SemEval-2023 Task 1 show that FCLL performs well in the three tracks of English, Farsi and Italian, with an average hit rate at 1 of 72.56% and an average mean reciprocal rank of 82.22%, ranking first in the overall evaluation.
 
 #### Approach:
- ![image](https://github.com/CharlesYang030/FCLL/blob/main/FCLL.png)
+![image](https://github.com/CharlesYang030/FCLL/blob/main/FCLL.png)
 #### 
-
+#### V-WSD KB:
+![image](https://github.com/CharlesYang030/FCLL/blob/main/V-WSDKB.png)
+#### 
 #### Announcement: Visual Word Sense Disambiguation (Visual WSD) is proposed by [SemEval-2023 Task 1](https://raganato.github.io/vwsd/) for the first time. Thanks to Raganato *et al.* for leading us to recognize this multimodal-multilingual field.
 
 ---
