@@ -17,7 +17,7 @@ from evaluation import evaluation_fn
 def set_config():
     parser = argparse.ArgumentParser(description="FCLL for Visual WSD")
     parser.add_argument('--run_name', type=str, required=False, default="FCLLv1")
-    parser.add_argument('--data_dir', type=str, required=False, default=r"D:\工作\Datasets\V-WSD\vwsd")
+    parser.add_argument('--data_dir', type=str, required=False, default="./data")
     parser.add_argument('--device', type=int, required=False, default=0)
     parser.add_argument('--train_batch_size', type=int, required=False, default=2)
     parser.add_argument('--eval_batch_size', type=int, required=False, default=16)
