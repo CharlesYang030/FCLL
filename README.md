@@ -18,14 +18,28 @@ V-WSD KB | 12956 | EN, FA, IT | 20904 | EN | 97267 | 1-n-n | 114GB | [Download](
 Official training set | 12869 | EN | 12869 | EN | 12999 | 1-1-1 | 16.8GB | [Download]()
 Official test set | 968 | EN, FA, IT | 968 | EN, FA, IT | 8100 | 1-1-1 | 10.4GB | [Download](https://1drv.ms/u/s!AgvzREJAm7GyhEBWWGyB5DkfT-fS)
 
-After downloading, please create a new ". /data" folder in the project directory and place the above three files as follows:<br>
+#### 2.Translate the non-English texts:
+In the official test set, Non-English ambiguous target words and phrases should be translated into English text, stored in `fa_translation.txt` and `it_translation.txt` separately, as the following format:
+```
+(an instance in Farsi)
+برنج‎	brass	فلز برنج	brass
+(an instance in Italian)
+gomma	eraser	gomma per smacchiare	eraser for stain removal
+```
+
+Note that after downloading, please create a new `. /data` folder in the project directory and place the above three files as follows:<br>
 ```.
 (the folder tree)
 |—— FCLL
 |    |—— data
 |         |—— kb.data
+|              |—— ...
 |         |—— official.traindata
+|              |—— ...
 |         |—— official.testdata
+|              |—— ...
+|         |—— fa_translation.txt
+|         |—— it_translation.txt
 |    |—— CLIP
 |    |—— ...
 ```
