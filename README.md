@@ -4,8 +4,6 @@ FCLL is a reliable, verifiable and extensible model that has a powerful synthesi
 #### Approach:
  ![image](https://github.com/CharlesYang030/FCLL/blob/main/FCLL.png)
 #### 
-#### V-WSD KB:
-![image](https://github.com/CharlesYang030/FCLL/blob/main/V-WSD KB.png)
 
 #### Announcement: Visual Word Sense Disambiguation (Visual WSD) is proposed by [SemEval-2023 Task 1](https://raganato.github.io/vwsd/) for the first time. Thanks to Raganato *et al.* for leading us to recognize this multimodal-multilingual field.
 
